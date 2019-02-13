@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<script>
+  $(document).ready(function () {
+    $("#flip1").click(function () {
+      $("#panel1").slideDown("slow");
+    });
+  });
+  $(document).ready(() => {
+    $("#flip2").click(() => {
+      $("#panel2").slideToggle("slow");
+    });
+  });
+  $(document).ready(function () {
+    $("button").click(() => {
+      $("#p1").css("color", "red")
+        .slideUp(1000)
+        .slideDown(500);
+    });
+  });
+</script>
+<style>
+  #panel1,
+  #flip1 {
+    padding: 5px;
+    text-align: center;
+    background-color: #1976d2;
+    border: solid 1px #0e0e0f;
+    color: #fff;
+    font-size: 20px;
+  }
+  #panel1 {
+    padding: 5px;
+    background-color: #54a1ee;
+    display: none;
+    color: #000;
+    font-size: 15px;
+  }
+  #panel2,
+  #flip2 {
+    padding: 5px;
+    text-align: center;
+    background-color: #1976d2;
+    border: solid 1px #282c34;
+    color: #fff;
+    font-size: 20px;
+  }
+  #panel2 {
+    padding: 5px;
+    background-color: #54a1ee;
+    display: none;
+    color: #000;
+    font-size: 15px;
+    font: bolder;
+  }
+  #head {
+    background-color: #1976d2;
+    margin-right: 1000px;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+  }
+  button {
+    padding: 5px 30px 5px 30px;
+    margin-bottom: 20px;
+    background-color: Orange;
+    font-size: 20px;
+  }
+  #body{
+    background-color: #282c34;
+  }
+</style>
+
+<body>
+  <div id="body">
+    <div id="head" align="center">NATTAPON LUEAKAEW</div>
+    <div align="center">
+      <img width="20%" height="20%" alt="me" src="https://graph.facebook.com/100005165587951/picture?width=800"><br><br>
+      <p id="p1">Hello World</p>
+
+      <button>Click</button>
+      <div id="flip1">History</div>
+      <div id="panel1">
+        <p>Name : Nattapon Lueakaew<br></br>
+          Birth Date : 28/10/2540<br></br>
+          Student ID : 5935512004
+        </p>
+      </div>
+      <div id="flip2">Contact</div>
+      <div id="panel2">
+        <p>ID : 1809700299521<br></br>
+          Phone Number : 0995218459<br></br>
+          E-mail : s5935512004@phuket.psu.ac.th
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- <button id="btn1">Show Text</button>
+  <button id="btn2">Show HTML</button>
+
+  <h1 id="test">My <b>First</b> JavaScript</h1>
+  <div text-align="center">
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+      Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").style.fontSize = "25px";
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.backgroundColor = "yellow";
+      }
+    </script>
+    <div><button type="button" onclick="myFunction()">Click Me!</button></div>
+    <p id="pict"></p>
+
+    <script>
+      function ran() {
+        return document.getElementById("pict").innerHTML =
+          Math.floor(Math.random() * 10);
+      }
+
+
+    </script>
+    <div><button type="button" onclick="ran()"> randam </button></div>
+
+
+    <script>
+      function fusion(sw) {
+
+        var pic;
+        if (sw == 0) {
+          pic = "DYs0PDoW0AAn6CH.jpg"
+        } else {
+          pic = "e2df2eb6696b47c8b0cd0b42fa2a63cf.jpg"
+        }
+        document.getElementById('myImage').src = pic;
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("div").animate({ left: '900px' });
+        });
+      });
+    </script>
+    <div><button>Start Animation</button></div>
+    <div style="background:white;height:1200px;width:900px;position:absolute;"></div>
+    <img id="myImage" src="e2df2eb6696b47c8b0cd0b42fa2a63cf.jpg" width="900" height="1200">
+
+    <p>
+      <button type="button" onclick="fusion(1)">Goku & Vegeta</button>
+      <button type="button" onclick="fusion(0)">Gogeta</button>
+    </p>
+
+
+  </div> -->
